@@ -1,7 +1,6 @@
 [submodule "meta-java"]
 	path = meta-java
-	url = git://git.yoctoproject.org/meta-java
+	url = https://github.com/rehsack/meta-java.git
 [submodule "meta-openembedded"]
 	path = meta-openembedded
 	url = git://git.openembedded.org/meta-openembedded
-	branch = daisy
