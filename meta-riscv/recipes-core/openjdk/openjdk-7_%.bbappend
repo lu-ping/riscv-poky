@@ -1,5 +1,5 @@
 # Variable to help copy our RISCV patch later
-RV_HOTSPOT_PATCH := "${THISDIR}/files/icedtea-hotspot-riscv.patch"
+RV_HOTSPOT_PATCH := "${THISDIR}/files/openjdk-7-icedtea-hotspot-riscv.patch"
 RV_OPENJDK_PATCH := "${THISDIR}/files/icedtea-jni-lock-riscv.patch"
 
 # Add our patch to the global path
@@ -8,7 +8,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 # Add our patch into the OpenJDK 7 list of patches
 # The meta-java layer deals with patches using a different pattern,
 # so we're just conforming to that.
-OEPATCHES += "file://build-riscv.patch"
+OEPATCHES += "file://openjdk-7-build-riscv.patch"
 ICEDTEA_PATCHES += "\
                     file://icedtea-hotspot-riscv.patch;apply=no \
                     file://icedtea-jni-lock-riscv.patch;apply=no \
